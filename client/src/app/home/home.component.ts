@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   registerMode = false;
+  infoMode = false;
 
   constructor() { }
 
@@ -20,6 +21,13 @@ export class HomeComponent implements OnInit {
 
   cancelRegisterMode(event: boolean) {
     this.registerMode = event;
+  }
+  infoToggle() {
+    this.infoMode = !this.infoMode ;
+  }
+
+  cancelInfoMode(event: boolean) {
+    this.infoMode = event;
   }
 
 }
